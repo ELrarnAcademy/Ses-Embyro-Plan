@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Systemic (Special) Embryology — Course Plan (Aligned with Langman’s 15th ed., 2024)</title>
+<meta name="description" content="UMST Faculty of Medicine — Systemic (Special) Embryology course plan for 2nd Year MBBS. Aligned with Sadler, Langman’s Medical Embryology 15th ed. (2024).">
+<style>
+  :root{
+    --brand:#0b5ea8; /* UMST blue */
+    --accent:#15a37d;
+    --ink:#1f2937;
+    --muted:#6b7280;
+    --band:#f3f4f6;
+    --card:#ffffff;
+    --border:#e5e7eb;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;color:var(--ink);font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";background:#fff;line-height:1.5}
+  a{color:var(--brand);text-decoration:none}
+  a:hover{text-decoration:underline}
+
+  header{position:sticky;top:0;background:linear-gradient(90deg,var(--brand),#0e78d6);color:#fff;z-index:50}
+  .wrap{max-width:1100px;margin:0 auto;padding:24px 16px}
+  .brand{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+  .brand img{width:44px;height:44px;object-fit:contain;border-radius:6px;background:#fff;padding:4px}
+  .brand h1{font-size:clamp(1.1rem,1.4rem + 0.5vw,1.8rem);margin:0;font-weight:700}
+  .brand small{display:block;color:#e5f2ff}
+
+  .toolbar{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+  .btn{appearance:none;border:1px solid transparent;background:#fff;color:var(--brand);padding:8px 12px;border-radius:10px;font-weight:600;cursor:pointer}
+  .btn:hover{background:#f0f7ff}
+  .btn--outline{background:transparent;border-color:#b3dbff;color:#fff}
+  .btn--outline:hover{background:rgba(255,255,255,0.12)}
+
+  main{display:grid;grid-template-columns:280px 1fr;gap:20px}
+  nav{position:sticky;top:88px;align-self:start;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px}
+  nav h3{margin:0 0 10px 0;font-size:0.95rem;color:var(--muted)}
+  nav a{display:block;padding:8px 10px;border-radius:8px;color:var(--ink)}
+  nav a:hover{background:var(--band)}
+
+  section.card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:18px;margin-bottom:16px}
+  h2{font-size:1.2rem;margin:0 0 8px 0}
+  h3{font-size:1.05rem;margin:14px 0 8px 0}
+  .subtle{color:var(--muted)}
+  .badge{display:inline-block;background:var(--band);border:1px solid var(--border);padding:2px 8px;border-radius:999px;font-size:0.8rem;margin-right:6px}
+
+  table{width:100%;border-collapse:collapse}
+  th,td{border:1px solid var(--border);padding:10px;vertical-align:top}
+  thead th{background:var(--band);text-align:left}
+  tr:nth-child(even) td{background:#fafafa}
+
+  .footer{text-align:center;color:var(--muted);padding:32px 16px}
+
+  /* Mobile layout */
+  @media (max-width: 980px){
+    main{grid-template-columns:1fr}
+    nav{position:relative;top:auto;order:2}
+  }
+
+  /* Print styles */
+  @media print{
+    header, .toolbar, nav{display:none !important}
+    section.card{page-break-inside:avoid}
+    a[href]::after{content:" (" attr(href) ")"; font-size:0.8em; color:#666}
+    body{background:#fff}
+  }
+</style>
+<script>
+  function printDoc(){ window.print(); }
+  function exportJSON(){
+    const obj = {"title":"Systemic (Special) Embryology — Course Plan","updated":"2025-10-19T13:56:37.187890Z"};
+    const blob = new Blob([JSON.stringify(obj,null,2)],{type:"application/json"});
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href=url; a.download='course-plan-meta.json'; a.click();
+    URL.revokeObjectURL(url);
+  }
+</script>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <img src="logo-umst.png" alt="UMST Logo placeholder">
+      <div>
+        <h1>Systemic (Special) Embryology — Course Plan</h1>
+        <small>Aligned with Sadler, <em>Langman’s Medical Embryology</em>, 15th ed. (2024)</small>
+      </div>
+    </div>
+    <div class="toolbar">
+      <button class="btn" onclick="printDoc()">Print / Save as PDF</button>
+      <a class="btn" href="#resources">Jump to Resources</a>
+      <a class="btn btn--outline" href="#schedule">Weekly Schedule</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap" style="padding-top:18px;">
+  <main>
+    <nav aria-label="On-page navigation">
+      <h3>Contents</h3>
+      <a href="#overview">Overview</a>
+      <a href="#objectives">Course Objectives</a>
+      <a href="#schedule">Lecture & Practical Plan</a>
+      <a href="#assessment">Assessment Plan</a>
+      <a href="#resources">Learning Resources</a>
+      <a href="#alignment">Chapter–Week Alignment</a>
+      <a href="#integration">Integration</a>
+    </nav>
+
+    <div>
+      <section id="overview" class="card">
+        <h2>Course Overview</h2>
+        <p><span class="badge">Level: 3rd semester</span><span class="badge">Credits: 2 (1 Theory + 1 Practical)</span><span class="badge">Duration: 15 Weeks</span></p>
+        <p>This course explores organ-system development from the end of gastrulation to the fetal period, emphasizing molecular regulation, morphogenesis, and clinical correlation as presented in <strong>Langman’s Medical Embryology (15th ed., 2024)</strong>. Students integrate embryology with anatomy, histology, pathology, and imaging to interpret normal and abnormal development.</p>
+      </section>
+
+      <section id="objectives" class="card">
+        <h2>Course Objectives</h2>
+        <ul>
+          <li>Describe the sequential development of major organ systems derived from ectoderm, mesoderm, and endoderm.</li>
+          <li>Explain key signaling pathways that regulate organogenesis (e.g., <em>SHH, FGF, BMP, WNT, HOX</em> gene families).</li>
+          <li>Correlate normal development with the embryological basis of congenital anomalies.</li>
+          <li>Apply embryological principles to interpret clinical images and genetic disorders.</li>
+          <li>Integrate embryological knowledge into case-based reasoning and early clinical sciences.</li>
+        </ul>
+      </section>
+
+      <section id="schedule" class="card">
+        <h2>Lecture & Practical Plan (15 Weeks)</h2>
+        <table>
+          <thead>
+            <tr><th style="width:8ch;">Week</th><th>Topic / System</th><th>Core Learning Objectives (CBME-Aligned)</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td><strong>Introduction & Germ Layer Review</strong></td><td>Systemic vs. general embryology; derivatives of germ layers; critical periods and teratogens.</td></tr>
+            <tr><td>2</td><td><strong>Musculoskeletal System</strong></td><td>Somite derivatives; intramembranous vs. endochondral ossification; limb bud patterning (HOX, FGF10, SHH); anomalies (amelia, phocomelia, clubfoot).</td></tr>
+            <tr><td>3</td><td><strong>Cardiovascular I — Heart</strong></td><td>Cardiac progenitor fields; heart tube, looping, septation, conduction system; genes (NKX2-5, TBX5, GATA4); ASD, VSD, ToF.</td></tr>
+            <tr><td>4</td><td><strong>Cardiovascular II — Vessels & Fetal ↔ Postnatal Circulation</strong></td><td>Aortic arches, venous and lymphatic development; fetal shunts and closures; PDA, coarctation, double arch.</td></tr>
+            <tr><td>5</td><td><strong>Respiratory System</strong></td><td>Laryngotracheal diverticulum; branching morphogenesis; alveolar maturation; regulators (NKX2-1, FGF/BMP); TEF, hypoplasia.</td></tr>
+            <tr><td>6</td><td><strong>Digestive I — Gut Tube & Mesenteries</strong></td><td>Foregut, midgut, hindgut; rotation & fixation; Meckel’s diverticulum, malrotation, atresias.</td></tr>
+            <tr><td>7</td><td><strong>Digestive II — Liver, GB, Pancreas, Spleen</strong></td><td>Hepatic diverticulum; pancreatic buds; molecular control (FGF, BMP, PDX1); annular pancreas, biliary atresia.</td></tr>
+            <tr><td>8</td><td><strong>Urogenital I — Urinary</strong></td><td>Pronephros → mesonephros → metanephros; ureteric bud–metanephric blastema; renal agenesis, horseshoe kidney, duplicated ureter.</td></tr>
+            <tr><td>9</td><td><strong>Urogenital II — Reproductive</strong></td><td>Gonadal differentiation; ductal system; external genitalia; DSDs incl. hypospadias and cryptorchidism.</td></tr>
+            <tr><td>10</td><td><strong>Head & Neck</strong></td><td>Pharyngeal arches/pouches/clefts; face, palate, tongue, teeth; neural crest migration; FGF8, BMP4, SHH; cleft lip/palate, Treacher Collins, DiGeorge.</td></tr>
+            <tr><td>11</td><td><strong>Central Nervous System</strong></td><td>Neurulation; primary/secondary brain vesicles; spinal cord; PAX/OTX2/SHH roles; NTDs (anencephaly, spina bifida).</td></tr>
+            <tr><td>12</td><td><strong>Peripheral NS & Autonomic</strong></td><td>Neural crest & placodes; cranial/spinal nerves; autonomic development; Hirschsprung disease.</td></tr>
+            <tr><td>13</td><td><strong>Special Senses — Eye, Ear, Nose</strong></td><td>Optic cup & lens (PAX6); otic placode & membranous labyrinth; nasal placode to choanae; coloboma, microtia, choanal atresia.</td></tr>
+            <tr><td>14</td><td><strong>Endocrine & Placenta + Integrated Review</strong></td><td>Pituitary, thyroid, parathyroid, adrenal, pancreatic islets; placental development and barrier; integrated clinical cases & teratology.</td></tr>
+            <tr><td>15</td><td><strong>Endocrine & Placenta + Integrated Review</strong></td><td>Pituitary, thyroid, parathyroid, adrenal, pancreatic islets; placental development and barrier; integrated clinical cases & teratology.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      \1
+        <p><strong>Assessment details:</strong> <em>Contact Faculty Registrar</em></p>
+        <p class="subtle">All assessment components, weighting, and examination structures are managed by the Faculty Registrar according to UMST academic policies. Students should refer to official communications for up-to-date information on assessments.</p>
+
+      <section id="resources" class="card">
+        <h2>Learning Resources</h2>
+        <h3>Core Textbooks</h3>
+        <ol>
+          <li>Sadler, T. W. (2024). <em>Langman’s Medical Embryology</em>, 15th Ed. Wolters Kluwer.</li>
+          <li>Moore, K. L., Persaud, T. V. N., &amp; Torchia, M. G. (2023). <em>The Developing Human</em>, 12th Ed. Elsevier.</li>
+          <li>Carlson, B. M. (2022). <em>Human Embryology &amp; Developmental Biology</em>, 7th Ed. Elsevier.</li>
+        </ol>
+        <h3>Supplementary References</h3>
+        <ul>
+          <li>Schoenwolf, G. C., et al. (2021). <em>Larsen’s Human Embryology</em>, 6th Ed. Elsevier.</li>
+          <li>Gilbert, S. F., &amp; Barresi, M. J. F. (2020). <em>Developmental Biology</em>, 12th Ed. Sinauer.</li>
+          <li>WHO (2023). Congenital anomalies and fetal development guidelines.</li>
+        </ul>
+        <h3>Digital & Interactive Tools</h3>
+        <ul>
+          <li>3D Embryology: Visible Body, Complete Anatomy</li>
+          <li>MOOCs: Khan Academy Medicine — Embryology series</li>
+          <li>UMST EasyLearn: SCORM quizzes, formative tests</li>
+        </ul>
+      </section>
+
+      <section id="alignment" class="card">
+        <h2>Chapter–Week Alignment (Sadler 15th ed.)</h2>
+        <table>
+          <thead><tr><th>Week</th><th>Chapter(s)</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>Ch. 1–3 (review)</td><td>General principles; germ layers; early organogenesis</td></tr>
+            <tr><td>2</td><td>Ch. 10</td><td>Musculoskeletal</td></tr>
+            <tr><td>3–4</td><td>Ch. 11</td><td>Cardiovascular I–II</td></tr>
+            <tr><td>5</td><td>Ch. 12</td><td>Respiratory</td></tr>
+            <tr><td>6–7</td><td>Ch. 13</td><td>Digestive I–II &amp; Associated organs</td></tr>
+            <tr><td>8–9</td><td>Ch. 14</td><td>Urogenital I–II</td></tr>
+            <tr><td>10</td><td>Ch. 15</td><td>Head &amp; Neck</td></tr>
+            <tr><td>11–12</td><td>Ch. 16</td><td>Central nervous system</td></tr>
+            <tr><td>13</td><td>Ch. 17–18</td><td>Special senses: Ear, Eye</td></tr>
+            <tr><td>14</td><td>Ch. 19</td><td>Endocrine &amp; Placenta; integrated review</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="integration" class="card">
+        <h2>Integration</h2>
+        <ul>
+          <li><strong>Horizontal:</strong> Gross Anatomy, Histology, Physiology, Pathology</li>
+          <li><strong>Vertical:</strong> Obstetrics &amp; Gynecology, Pediatrics, Radiology, Medical Genetics</li>
+        </ul>
+
+      </section>
+    </div>
+  </main>
+</div>
+
+<footer class="footer">
+  © 2025 UMST — Faculty of Medicine ·
+</footer>
+</body>
+</html>
